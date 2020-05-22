@@ -7,10 +7,15 @@ local http = require 'coro-http'
 local settings = require('./settings.lua')
 local fs = require('fs')
 -----------------------------[COMMANDS]-----------------------------
+--IMPORTANT
+-- WHENEVER YOU ADD COMMANDS, YOU M U S T ADD THEM HERE. 
+
+
 local commands= {}
 local tbl = {discordia = discordia, commands = commands, settings = settings, client = client}
 --//////////////////////////////////////////////////////////--
-local ping = require ("./commandmodules/ping.lua")(tbl)
+--local examplecommand = require('./commandmodules/examplecommand.lua')(tbl) -- -- ADD ALL COMMANDS LIKE THIS HERE
+local ping = require ("./commandmodules/ping.lua")(tbl) 
 local eval = require ("./commandmodules/eval.lua")(tbl)
 local help = require ("./commandmodules/help.lua")
 --//////////////////////////////////////////////////////////--
@@ -18,8 +23,9 @@ local help = require ("./commandmodules/help.lua")
 
 local commands2
 commands2 = {
-eval = eval,
-ping = ping
+eval = eval, -- AND RIGHT HERE.
+ping = ping,
+--examplecommand = examplecommand,
 }
 
 
