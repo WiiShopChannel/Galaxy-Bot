@@ -14,9 +14,8 @@ local aliases = coms.aliases
 local guildamount = client.guilds
 ------------------------------ -------------------------------------------------------------------
 client:on('ready', function()
-print("The Coolest Bot in The Universe")
-print("Logged in as "..client.user.name)
-client:setGame("Fortnite")
+	print("The Coolest Bot in The Universe")
+	print("Logged in as "..client.user.name)
 end)
 
 local function splitArgs(str)
@@ -37,6 +36,7 @@ local function splitArgs(str)
 			end
 			justIn = false
 			lastArg = i + 1
+			-- This commented out part is the part that makes it so when you  use quotes in an argument it counts as ONE argument.
 		--[[elseif c == "'" then
 			if not inQuotes and lastArg == i then
 				inQuotes = "'"
