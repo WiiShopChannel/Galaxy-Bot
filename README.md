@@ -1,7 +1,7 @@
 # Galaxy's Bot
 
 
-Howdy! I'm Galaxy, a ROBLOX scripter and Lua extraordinaire. Here's a quick tutorial on how to get this bot running.
+Howdy! I'm Galaxy, a ROBLOX scripter and (self-appointed) Lua extraordinaire. Here's a quick tutorial on how to get this bot running.
 
 
 
